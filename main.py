@@ -28,7 +28,7 @@ while len(guessed_state) < 50:
     if answer_state == "Exit":
         missing_states_list = [i for i in states if i not in guessed_state]
 
-        print(missing_states_list)
+        print("The states you missed are -> ", missing_states_list)
 
         """ To convert the dataframe dict to pandas """
         missed_states = pandas.DataFrame(missing_states_list)
